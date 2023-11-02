@@ -15,32 +15,16 @@ The `PIL` (Pillow) library installed. You can install it using `pip`:
 
 ## How to Use
 
-1. Make a folder called `images`` in the root directory and go out into the world and find materials for your collage. Place your images as PNGs in a the folder.
+1. Make a folder called `images` in the root directory and go out into the world and find materials for your collage. Place your images as PNGs in a the folder.
 
-2. Customize the image paper size by changing the `image_width` and `image_height` variables in the script. The default values are set to 2000x2000 pixels.
+2. Customize the image canvas size by changing the `image_width` and `image_height` variables in the script. The default values are set to 2000x2000 pixels.
 
-Run the script in your terminal or Python environment.
-    python poster_generator.py
+3. Run the script in your terminal or Python environment.
+    python app.py
 
-The script will randomly select 6 images from the "images" directory and place them on the image-sized canvas, adjusting their sizes and positions.
+4. The script will randomly select 6 images from the "images" directory and place them on the image-sized canvas, adjusting their sizes and positions.
 
-The final poster will be saved as a PNG file with a random name in the same directory as the script.
-
-Script Explanation
-
-    os, secrets, random, and PIL are imported for various functionalities used in the script.
-
-    The script lists all PNG files in the "images" directory using os.listdir and a list comprehension.
-
-    It defines the image paper size as image_width and image_height and generates a random background color.
-
-    A target image is created using Image.new, which will serve as the canvas for the poster.
-
-    Six random images are selected from the "images" directory using random.sample.
-
-    The poster_generator function takes the selected images, canvas size, and the target image as parameters and pastes the images onto the canvas with random positions and sizes.
-
-    The final poster is saved with a random filename using target_img.save.
+5. The final poster will be saved as a PNG file with a random name in the same directory as the script.
 
 Please ensure that you have a sufficient number of PNG images in the "images" directory to ensure variety in the generated poster. You can also modify the number of images to be selected or the canvas size according to your preferences.
 
